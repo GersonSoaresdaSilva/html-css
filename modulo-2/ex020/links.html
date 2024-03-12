@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li > a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #f00 !important;
+            text-decoration: underline;
+        }
+        a:active {
+            background-color: #ffff00;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        .especial::before {
+            content: '⇒';
+        }
+        .especial::after {
+            content: '⇐';
+        }
+        .especial {
+            background-color: #ffff00ce;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/SS-Gerson" target="_blank" rel="external" class="especial">Repositório GitHub</a></li>
+        <li><a href="https:youtube.com/cursoemvideo/" target="_blank" rel="external">Youtube Curso em Vídeo</a></li>
+        <li><a href="https://cursoemvideo.com" target="_blank" rel="external">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

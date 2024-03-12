@@ -1,0 +1,17 @@
+git status - verificar modificações
+git add "nome do arquivo modificado" - adicionar arquivo modificado para staged
+git diff "nome do arquivo" - visualizar modificações do arquivo
+git diff --staged ou -s "nome do arquivo" - para visualizar modificações do arquivo na área de staged
+git restore "nome do arquivo" - restaura arquivo quando está na área Changes
+git restore --staged ou -s "nome do arquivo" - restaura arquivo quando está na área Staged
+git commit -m "mensagem sobre as modificações"
+git log - histórico dos últimos commits feitos
+git push origin master - enviar alterações locais para repositório remoto
+git pull - baixa as últimas alterações do repositório remoto e faz um merge com a branch local
+git fetch - baixa as alterações, mas não faz merge com a branch local. Assim podemos usar um git diff para ver as alterações e em seguida um git pull
+
+git branch nome da branch - cria um branch local
+git checkout nome da branch - mudar para a branch criada
+git log --oneline --decorate - vai mostrar que o nosso HEAD aponta para a branch criada
+
+git merge nome da branch - fazer o checkout para a branch que vai receber as modificações e fazer o merge com a branch que contém as modificações
