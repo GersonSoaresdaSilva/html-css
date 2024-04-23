@@ -24,6 +24,15 @@
         thead, tfoot {
             background-color: lightblue;
         }
+        /* odd - linhas ímpares ou 2n-1 */
+        tbody > tr:nth-child(odd) {
+            background-color: black;
+            color: white;
+        }
+        /* even - linhas pares ou 2n*/
+        tbody > tr:nth-child(even) {
+            background-color: lightsalmon;
+        }
         td, th {
             border: 1px solid black;
             padding: 1vh;
