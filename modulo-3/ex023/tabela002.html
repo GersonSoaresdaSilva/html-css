@@ -24,6 +24,14 @@
         thead, tfoot {
             background-color: lightblue;
         }
+        thead {
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: lightblue;
+        }
         /* odd - linhas ímpares ou 2n-1 */
         tbody > tr:nth-child(odd) {
             background-color: black;
